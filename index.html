@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Obrigatorio - Lucas Brandão</title>
+
+    <script>
+        var livros = [];
+
+        class Livro{
+            constructor(titulo, autor, paginas, genero){
+                this.titulo = titulo,
+                this.autor = autor,
+                this.paginas = paginas,
+                this.genero = genero
+            }
+            desc(){
+                return (this.titulo + " é uma obra de " + this.genero + " do escritor(a) " + this.autor + " e tem " + this.paginas + " páginas")
+            }
+        }
+
+        var res = prompt("deseja salvar um livro? (responda 'sim')")
+        var i = 0
+        
+        while(res === "sim"){
+
+            livros[i] = new Livro(prompt("qual é o titulo do livro?"), prompt("qual é o autor do livro?"), prompt("quantas paginas tem o livro?"), prompt("qual é o genero do livro?"))
+            res = prompt("deseja salvar um livro? (responda 'sim')")
+            i++
+
+        } 
+           console.log("entrada de livros encerrada \n no console digite 'livros[index desejado].desc() para obter a descrição do livro") 
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
