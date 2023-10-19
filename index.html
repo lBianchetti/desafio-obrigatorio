@@ -20,8 +20,9 @@
             }
         }
 
+        livros[0] = new Livro(Titulo-teste, Autor-teste, 100, Genero-teste)
         var res = prompt("deseja salvar um livro? (responda 'sim')")
-        var i = 0
+        var i = 1
         
         while(res === "sim"){
 
@@ -29,7 +30,8 @@
             res = prompt("deseja salvar um livro? (responda 'sim')")
             i++
 
-        } 
+        }   
+           console,log(livros[0].desc())  
            console.log("entrada de livros encerrada \n no console digite 'livros[index desejado].desc() para obter a descrição do livro") 
 
 
